@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mandeep | Full Stack Web Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f5f7fa;
+      color: #333;
+    }
+
+    header {
+      background: #111;
+      color: #fff;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+    }
+
+    section {
+      padding: 60px 50px;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      background: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .section-title {
+      font-size: 2em;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .skills, .services, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .tabs a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #007bff;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div><strong>Mandeep</strong></div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Hi, I'm Mandeep</h1>
+    <p>Full Stack Web Developer | AI & Power BI Enthusiast</p>
+    <a href="#contact" class="btn">Hire Me</a>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <p>
+      I am a passionate and results-driven Full Stack Web Developer pursuing B.Tech in Computer Science & Engineering.
+      I specialize in building end-to-end web applications, integrating modern AI tools, APIs, and business insights
+      using Power BI. I love solving problems and creating impactful digital experiences.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills">
+      <div class="card">HTML</div>
+      <div class="card">CSS</div>
+      <div class="card">JavaScript</div>
+      <div class="card">React</div>
+      <div class="card">Angular</div>
+      <div class="card">Node.js</div>
+      <div class="card">Express.js</div>
+      <div class="card">MongoDB</div>
+      <div class="card">Google APIs</div>
+      <div class="card">Chatbot Development</div>
+      <div class="card">AI Tools</div>
+      <div class="card">Power BI</div>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2 class="section-title">Services</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Website Design</h3>
+        <p>Modern, responsive and user-friendly websites using the latest design practices.</p>
+      </div>
+      <div class="card">
+        <h3>Full Stack Web Development</h3>
+        <p>Complete web app development from front-end UI to back-end APIs and database integration.</p>
+      </div>
+      <div class="card">
+        <h3>API Integration</h3>
+        <p>Expertise in working with third-party APIs like Google Maps, YouTube, and more.</p>
+      </div>
+      <div class="card">
+        <h3>Chatbot Development</h3>
+        <p>Create smart chatbots for websites or automation using AI tools.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>Built this modern portfolio using HTML, CSS, and JS to showcase skills and projects.</p>
+      </div>
+      <div class="card">
+        <h3>Chatbot App</h3>
+        <p>Developed AI-powered chatbot using Dialogflow and integrated with web frontend.</p>
+      </div>
+      <div class="card">
+        <h3>Data Dashboard</h3>
+        <p>Created interactive business dashboards using Power BI and live data sources.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <div class="contact-form">
+      <form action="mailto:mandeeps0564@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button class="btn" type="submit">Send</button>
+      </form>
+      <p>Email: <a href="mailto:mandeeps0564@gmail.com">mandeeps0564@gmail.com</a></p>
+      <p>Phone: <a href="tel:+919817533693">+91 98175 33693</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/mandeep-dhiman-03373727a" target="_blank">Visit Profile</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mandeep | Full Stack Web Developer</p>
+  </footer>
+</body>
+
+</html>
